@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa 01</title>
+    <style>
+        h1{
+            /* Aqui eu posso mmudar o tipo da caixa por exemplo : 
+              display: inline;
+            */
+          
+            background-color: lightblue;
+            /* BOX SIZE DA MINHA CAIXA */
+            height: 300px;
+            width: 300px;
+
+
+              /*border
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;*/
+            /*Short hands*/
+            border: 10px solid rgb(77, 165, 42);
+
+
+            /*espaço em volta da caixa*/
+            /*padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;*/
+            /*Short hands*/
+            padding: 10px 10px 6px 6px;
+            /*ou se todos forem iguais basta assim: padding: 10px; já vai mostras*/
+            
+            
+            /*Margim Margim na linha do lado de fora
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+
+             /*Short hands
+              margin: 6px;
+               margin: 6px 30px 40px 10px;
+                margin: 6px 8px;
+                ou abaixo centralizando
+             */
+              margin: 6px auto 7pc auto;
+
+               /*Short hands contorno 
+              outline-width: 9px;
+              outline-style: dashed;
+              outline-color: blue; */
+              outline: 3px double coral;
+
+        }
+         /* Aqui eu posso mmudar o tipo da caixa por exemplo : 
+              display: block;
+            */
+           
+        a{
+            /*display: block;*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Parágrafos são exemplos de box-level , mas os <a href="#">links são exemplos de inline-level</a></p>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links visitados </title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(248, 248, 241, 0.801);
+        }
+        a{
+            color: rgb(235, 159, 66);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: chartreuse;
+        }
+        a::after{
+            content: '↠;';
+            text-decoration: none;
+            font-weight: lighter;
+            color: rgb(96, 128, 155);
+        }
+        a::before{
+            content: '↞;';
+           
+        }
+        .especial{
+            background-color: rgb(162, 83, 236);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <li><a href="https://github.com/alexoab" target="_blank">repositorio do github</a></li>
+    <li> <a href="">pesquisa on line</a></li>
+    <li><a href="https://www.youtube.com/" target="_blank" class="especial">Youtube</a> </li>
+    <li><a href="www.faceboock.com.br">meuprojeto</a></li>
+    <li><a href="https://erikasarti.com/html/tabela-cores/" target="_blank">Acesse para mais figuras nos links </a></li>
+
+
+
+
+
+
+
+
+</body>
+</html>

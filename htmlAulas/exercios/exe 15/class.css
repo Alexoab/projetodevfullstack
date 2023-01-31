@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    background-color: #7259CF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1{
+color: rgb(53, 51, 51);
+}
+h2{
+ background-color: #3A2D69;
+ color: #5D48A8;
+}
+/*
+#basico{
+    font-size: 16px;
+    font-weight: bold;
+} Funciona ma a W3 c não recomenda!
+*/
+.basico{
+ color: #5D48A8;
+ font-weight: bolder;
+ 
+
+}
+.intermediario{
+ color: #4872a8;
+ 
+}
+.avancado{
+    color: #a85348;
+}
+.destaque{
+    background-color: rgb(200, 255, 0);
+}
+p{
+text-align: center;
+}

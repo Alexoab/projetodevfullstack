@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposividade</title>
+    <style>
+    body{
+        background-color: antiquewhite;
+    }
+    main{
+        background-color: whitesmoke;
+        padding: 33px;
+        border-radius: 10px;
+        min-width: 246px;/* Minima  320  largura de celulares mais antigos em no exemplo pelos testes com o plugim windowns resizer chegamos a essa sem rolagem lateral pé*/
+        max-width: 800px; /* Maxima lagura em */
+        margin: auto;/* centraliza o texto*/
+    }
+    main h1 {
+      color: blue;
+      background-color: black;
+     
+    }
+    img{
+        width: 100%;/* a imagem fica responsiva */
+        box-shadow: 2px 0px 3px 3px rgba(0, 0, 0, 0);
+
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responssividade </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore iusto maiores inventore officia sapiente debitis, tenetur reprehenderit ratione ducimus quo saepe laboriosam rem mollitia sequi sunt excepturi voluptatibus. Rem? </p>
+       
+        <picture>
+            <source media="(max-width: 500px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg"  alt="Droides bugs">
+        
+        </picture>
+     
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora beatae adipisci autem, optio harum nesciunt, necessitatibus tempore reiciendis dolore excepturi, non placeat nulla nostrum odit quod. Odio minus nesciunt facere?</p>
+    </main>
+</body>
+</html>

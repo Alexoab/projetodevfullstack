@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover exemplos</title>
+</head>
+<style>
+    body{
+        background-color: rgba(255, 248, 220, 0.418);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    div:hover{ /* Passe o mouse  */
+        color: darkblue;
+
+    }
+    div > p{ /* div filho do p  que :*/
+        display: none;/* não mostre conteúdo */
+    }
+    div:hover > p {  /* usando uma peseudo-classe com child filho.  */
+        display: block; /* div filho  principio de menus aqui mostra o conteúdo */
+        color: rgba(228, 98, 11, 0.541);
+        background-color: rgb(226, 133, 206);
+        width: 300px;
+        height: 300px;
+    }
+   
+</style>
+<body>
+
+    <h1>Exemplos</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <p> oxe cadê o paragrafo ?</p>
+    <div>Passe aqui o seu mouse 
+        <p> Achou! o bolsoringa!! <img src="imagens/162614.jpgi" alt="simbolo" style="width: 150px;height: 100px;"> </p>
+    </div>
+    
+</body>
+</html>

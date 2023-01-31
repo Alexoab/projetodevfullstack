@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links hover</title>
+  <style>
+
+    /*
+    Seletores Personalizados
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = children 
+
+    
+    */
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: red;
+      /* Retirando o sublimado dos sites   text-decoration: none; */
+      text-decoration: none;
+     font-weight: bold;
+    
+    }
+    a:visited{
+      color: seagreen;
+    }
+
+    a:hover{  /* Define ,estados de elementos dentro de HTML */
+      text-decoration: underline;
+      color: seashell;
+    }
+    a:active{
+      color: springgreen;
+    }
+    /* Pseudo-elemento */
+    a::after{  /* Pseudo elemento , conteudo depois do link mostre este elemento */
+      content: '[Link aqui]';
+      font-weight: normal;
+      color: tomato;
+    }
+    a::before{
+      content: ' ☞ ';
+    }
+
+    .olha{
+      background-color: rgba(211, 131, 66, 0.856);
+    }
+  </style>
+
+
+</head>
+<body>
+  <h1>Personalizando link </h1>  
+  <ul>
+      <li>
+          <a href="https://github.com/Alexoab/UsandoOgit/issues/1" target="_blank">Meu GIT </a></li>
+          <li><a href="https://www.w3schools.com/"> saiba mais na W3</a></li>
+          <li><a href="https://conexaopolitica.com.br/"> Fique por dentro</a>
+          <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" class="olha"> simbolos htm 5 </a></li>
+          </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* Paletas de cores use :root e mais racional
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+/*Crie um root para facilitar a troca de cores durante o seu projeto  :root*/
+:root{
+
+    /* Paleta de cores */
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    
+
+ /* Padroes de Fontes */
+    --fonte-padrao:Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue',cursive;
+    --fonte-android:'Android',cursive;
+}
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+a.externo::after{
+    content: '\00a0\1f517';
+}
+
+header{
+  background-image: linear-gradient(to left bottom ,var(--cor2),var(--cor5));
+    text-align: center;
+    min-height: 166px;
+    padding-top: 10px;
+    text-shadow:  3px 3px 0px rgba(0, 0, 0, 0.479);
+
+}
+header > h1 {
+    color:var(--cor4) ;
+    font-family: var(--fonte-destaque);
+    /*margin-top: 10px;*/
+    padding-bottom:  10px;
+    text-shadow: 2px 2px 0px var(--cor5);
+    
+    font-size: 4em;
+     /*largura do contorno  2px; e a cor */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(240, 232, 232, 0.705);
+    
+  
+  
+}
+header >p{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px var(--cor5);
+  
+  
+
+    
+}
+
+nav{
+    background-color: var(--cor1);
+    color: whitesmoke;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 4px -2px 7px 2px black;
+}
+nav > a{
+    padding: 10px;
+    color: azure;
+    /*Perde o underline*/
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+/*Passar o mouse em cima */
+nav > a:hover{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    border-radius: 15px;
+    /* transisão para o contúdo do radious */
+    transition-duration: 1s;
+}
+
+
+
+main{
+    background-color: rgba(255, 255, 255, 0.76);
+/* Seto a largura minima para adptar o conteúdo  */
+    min-width: 300px;
+    /* Seto a lagura maxima para adptabilidade*/
+    max-width: 1000px;
+    /*A margem para telas muito grandes se adpaterem */
+    /*centraliza o texto adptavevel com as margens adptavel */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.459);
+    /*Margim em baixo de px */
+    margin-bottom: 90px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+}
+main h1 {
+    color: var(--cor2);
+    font-family: var(--fonte-android);
+}
+main h2{
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-size: 1.6em;
+    background-image: linear-gradient(to right ,var(--cor1) ,transparent);
+    text-indent: 6px;
+}
+
+main p{/* so lembrando que ela funciona com os ponteiros do relogio 15 cima 15 direita 15 baixo 15 esquerda*/
+    margin: 15px 0px;
+    text-align: justify;
+    /*Espaço nos paragrafos */
+    text-indent: 33px;
+    /*Espaçamento entre linhas .Pratique no devtools */
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding:2px 2px ;
+}
+main a{
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--cor0);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+/*Adaptando as imagens do maim para serem adaptaveis */
+main img {
+    /* As imagens se adptam as telas 100 */
+ width: 100%;
+}
+main img.pequena {
+    /*vou manter a resolução legal em telas pequenas de celulares e a imagem não perde a largura aumentado e diminuindo  */
+    max-width: 350px;
+   /* width: 50%;*/
+    /*deixando a imagem no meio e adptavel o ideal e gerar outras imagens para dispositivos menores*/
+    display: block;
+    margin: auto;
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 30px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 3.6%;
+    left: 1.9%;
+    width: 96%;
+    height: 96%;
+   
+}
+
+aside h3{
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    
+    
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 30px ;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.349);
+    }
+    aside ul{
+        /*Acesse o emoji pidia e coloque \e numero \ e o tamanho do espaço do simbolo \00a0 no caso dois espaços não é compativel com qualquer navegador*/
+        list-style-type: '\2714\00a0\00a0';
+        list-style-position: inside;
+        columns: 2;
+    }
+    aside > h3{
+        background-color: var(--cor3);
+        color: white;
+        padding: 10px;
+        /* como relogio: acima, direita,abaixo , esquerda*/
+        margin: -10px -10px 0px -10px;
+        /*Cima da direita ,cima da esqurda,baixo da direita , baixo da direita*/
+        border-radius: 10px 10px 0px 0px;
+    }
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+footer a{
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}

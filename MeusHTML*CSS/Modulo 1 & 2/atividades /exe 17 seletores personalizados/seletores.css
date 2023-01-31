@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* EM html é id = em css é # (só pode um elemeto)
+   EM html é class = em css é . (pode varios elementos)
+*/
+
+body {
+   /* background-color:#70fddf;*/
+   background-image: linear-gradient(to right ,#95F087,#9CFC8D);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-indent: 30px;
+}
+h1 {
+    color: #0B21E6;
+    background-color: #0B21E6;
+    color: whitesmoke;
+    
+}
+h1#estilo1{
+    text-align: center;
+    background-color: #45703F;
+    color: whitesmoke;
+}
+h2{
+    color: rgb(72, 72, 243);
+
+
+}
+h2.basico{
+    color: #6DB063;
+
+}
+.inter{
+color: #0b58e6;
+}
+.avan{
+color: #bd4601;
+}
+.destaque{
+    background-color:#f0e586ef ;
+}

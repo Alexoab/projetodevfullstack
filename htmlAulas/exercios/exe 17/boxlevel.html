@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas </title>
+
+    <style>
+          /*caixa possui quatro valores para padding e quatro para margin,
+sempre nessa mesma ordem: superior (-top), direita (-right), inferior (-bottom),esquerda (-left). Quando colocamos um único valor de dimensão para opreenchimento ou margem, esse mesmo valor é aplicado simetricamente a todas as direções;*/
+        h1{/* Box-level posso usar com inline  display: inlline;*/
+            background-color: lightgreen;
+            width: 300px;
+            height: 200px;
+            
+            border-width: 10px;/*Largura da borda*/
+            border-style: solid;
+            border-color: darkblue; 
+          /*SHORTHAND ; boder: 10px solid darkblue;*/
+           
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left:10px ;
+         /*SHORTHAND ; padding: 10px 15px 20px 25px ;*/
+         /* preenchimento e borda usando apenas duas medidas:
+         SHORTHAND ; padding: 10px 25px ;*/
+         /*SHORTHAND ; padding: 10px;  ( quando todas forem iguais) */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        /*SHORTHAND ; margin: 10px 15px 20px 25px;*/
+        /*SHORTHAND ; margin: 10px  25px;*/
+        /* margin:auto;* centraliza a margem o seletor */
+        /* margin: 20px auto 40px auto ; */
+            outline-width: 7px;/*lado defora do tracejado, está dentro da margem */
+            outline-color: royalblue;
+            outline-style: groove;
+         /*SHORTHAND ; outline: 5px dashed royalblue ;*/
+        }
+        a{/* in-level  posso usar um display: block*/
+            
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esse é um exemplo de Box-Level</h1>
+    <p>Paragrafos também <a href="#"> inline-leve l</a> Links ex de inline-leve  </p>
+</body>
+</html>

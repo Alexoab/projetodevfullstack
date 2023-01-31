@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cursoxml>
+    <curso>
+        <!--com -->
+        <aula id="01">xml</aula>
+    </curso>
+    <detale>
+        &lt;
+                <!--Representa <  -->
+
+        &gt;
+                <!--Representa  > -->
+        &apos;
+                <!--Representa  'aspas simples' -->
+        &amp;
+                <!--Representa  & -->
+        &quot; isso é uma aspa dupla &quot;
+    </detale>
+</cursoxml>

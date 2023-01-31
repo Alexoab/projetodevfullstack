@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica, san-serif;
+        }
+        a{
+            font-weight: bold;
+            color: red;
+            text-decoration: none;
+           font-weight: bold;
+        }
+        a:visited {
+            color: rgb(1, 50, 139);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: ' [ link ]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        a::before{
+            content: 'veja depois ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elemento</h1>
+    
+    <h2>Persnalizando um link</h2>
+    Criando um link ja visitado acesse 
+  <ul>
+      <li><a href="http:// ta" target="_blank">link1</a></li>
+      <li><a href="http:// ta" target="_blank">link2</a></li>
+      <li><a href="http:// ta" target="_blank">link3</a></li>
+  </ul>
+
+
+</body>
+</html>

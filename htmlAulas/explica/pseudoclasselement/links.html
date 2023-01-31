@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de links </title>
+<style>
+ body{
+     font-family: 'Times New Roman', Times, serif;
+ }
+  a{
+      color: rgb(255, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+  }
+  a:visited{
+      color: deepskyblue;
+  }
+  a:hover{
+      text-decoration: underline;
+      color: rgb(18, 18, 216);
+  }
+  a:active{
+      color: gold;
+  }
+ a::before{
+     content: ' ✱ ';
+ }
+a::after{
+    content: ' ♜ ';
+
+}
+.minhamudanca{
+    background-color: greenyellow;
+}
+</style>
+</head>
+<body>
+    <h1>Personalização de links </h1>
+    <ul>
+        <li> <a href="https://www.w3schools.com/"> para saber mais W3 </a> </li>
+        <li> <a href="https://github.com/Alexoab/UsandoOgit/issues/1" target="_blank">Meu GIT </a></li>
+        <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" class="minhamudanca"> simbolos htm 5 </a></li>
+    </ul>
+</body>
+</html>

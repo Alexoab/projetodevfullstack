@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* lembrando:
+ Em html            Em CSS 
+id                  #
+class               .
+*/
+body{
+    background-color: #BA60BF;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    color: #3e2040d0;
+}
+h1#principal{
+    text-align: center;
+    background-color:#7c4080 ;
+}
+h2{
+    background-color: #F97FFF;
+    color:3e2040d0 ;
+}
+p {
+text-align: justify;
+color: black;
+}

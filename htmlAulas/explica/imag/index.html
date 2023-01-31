@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias no HTML5</title>
+</head>
+<body>
+    <h1>Imagens nas telas</h1>
+    <p>veja o conteúdo e as imagens</p>
+    <picture>
+      <source media="(max-width:750px )" srcset="fotos/cel.png">
+      <source media="(max-width:1050px )" srcset="fotos/table.png">
+      <img src="fotos/comp.png" alt="Imagen flexivel 1000">  <!--Imagens maior-->
+    </picture>
+ 
+    <h1>Áudios</h1>
+  <audio preload="metadata" autoplay controls loop>
+  <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/mpeg">
+    <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/ogg">
+    <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/wav">
+        <p>Infelimente o seu navegador não pode reproduzi o áudio</p>
+         <a href="midias/Watercolor Lilies - Aaron Kenny.mp3">Baixe aqui</a>
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/83171000cc.js" crossorigin="anonymous"></script>
+    <title>Site responsivo</title>
+</head>
+<body>
+<h1>Imagens dinâmicas </h1>
+<p>Aqui um exemplo de como  podemos abrir diversas imagens em diferentes resoluções</p>
+<pre>
+   
+    <ul>
+        <li><a href="guiaimagens/guia-de-formatos-de-imagem-para-redes-sociais.pdf" download="Apostila" type="application/pdf"   target="_blank" rel="">Guia para seu Site</a></li>
+    </ul>
+</pre>
+<picture>
+    <source media="(max-width: 750px )" srcset="imagens/pequena.png" type="image/png"> <!--carregue a imagem pequena , até a max resolução de 750px-->
+<source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png"><!--Carregue a imagem media até a resolução de 1050px-->
+<img src="imagens/grande.png" alt="Imagen flexivel"><!--Comece carregando a imagem maior para realizar as imagens dinâmicas no seu site .Sempre atendo com a rolagem lateral. pois seu usuário pode está acessando de um celular, e vai cai fora do seu site, é um saco! a barra de rolagem .aumentando o seu bounce rate do seu site ,é o google penalizando seu site-->
+
+</picture>  
+<h1>Reproduzindo meus áudios </h1> 
+<pre>
+    <p> <audio src="meusaudio/apresentacao produto fast and Run - Nico Staf.mp3" controls autoplay></audio></p> 
+<!--Nos formatos MP3- WAV- OGG  o mesmo áudio-->
+   
+<h2>Segunda maneira de representar </h2>
+   <audio preload="metadata" autoplay controls loop >
+       <source src="meusaudio/hiphopdramatico Beats.mp3" type="audio/mpeg"><!--Sempre em ordem de precedência 1° mp3 ,2°ogg e 3°wav-->
+       <source src="meusaudio/hiphopdramatico Beats.ogg" type="audio/ogg">
+       <source src="meusaudio/hiphopdramatico Beats.wav" type="audio/wav">
+       <p>Infelizmente seu navegador não consegue tocar o áudio</p>
+       <a href="meusaudio/hiphopdramatico Beats.mp3">Baixe aqui</a>
+   </audio>
+
+   <p><h2>Página de videos  </h2>
+    <ul><li>Meus videos </li></ul>
+    <a href="videossite.html" target="_self" rel="next"><img src="imagens/Right1616.ico" alt="Próxima página"></a>
+</p>
+</pre>
+</body>
+</html>

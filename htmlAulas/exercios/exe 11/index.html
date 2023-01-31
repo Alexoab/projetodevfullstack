@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTLM5</title>
+</head>
+<body>
+    <h1>Imagens em diferentes telas</h1>
+<p>veja , você tem que prestar atenção:
+    <pre>
+     <i>é preciso
+    tomar cuidado com formatos e
+    tamanhos, pois muita gente abrirá
+    os sites em seus celulares e
+    dispositivos móveis. </i>
+    Isso acaba aumentando o consumo de dados em dispositivos móveis e deixando seu
+    site muito pesado, e ninguém tem paciência para acessar site lento.
+    </p>  
+    </pre>
+   <h3>OBS: <strong> Sites lentos aumentam a taxa de rejeição dos usuários
+    e prejudicam a indexação da sua página em mecanismos de busca
+    como o Google.</strong></h3>
+    <p>Assista o video aqui <a href="https://youtu.be/jWnMfvSdo1E" target="_blank" rel="External">Google</a></p>
+    <p> crie  três imagens ao lado: a menor tem 300x300px, a média tem 700x700px e a maior tem 1000x1000px..(Resolução pode ser 800)
+        </p>
+<Pre>
+    as tags utlizadas  &lt;<abbr title="img src ='foto.png' alt = 'a imagen '>">picture</abbr>&gt; &lt;source&gt; 
+    ‣ type vai indicar o media type da imagem que usamos. 
+    ‣ srcset vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.
+    ‣ media indica o tamanho máximo a ser considerado para carregar a imagem
+indicada no atributo srcset.
+
+Você pode até colocar o valor exato de 1000px na
+propriedade max-width, mas vai perceber que um valor ligeiramente
+acima vai gerar resultados mais interessantes.
+    
+</Pre>
+<picture>
+    <source media="(max-width:750px )" srcset="Imagens/celularP.png" type="image/png"><!--Imagen menor0-->
+    <source media="(max-width:1050px )" srcset="Imagens/TableteM.png" type="image/png"><!--Imagen media-->
+    <img src="Imagens/CompuadorG.png" alt="imagem Flexivel 1000"> <!--Imagen maior-->
+</picture>
+
+<h1>Reproduzindo áudios </h1>
+<p>vamos apreder a reproduzir no HTML5</p>
+<audio src="midias/Zombie March - Sir Cubworth.mp3" controls autoplay></audio><!--mp3-wav-ogg -toca em qualquer -->
+
+
+<audio preload="metadata" autoplay controls loop >
+    <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/mpeg">
+    <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/ogg">
+    <source src="midias/Watercolor Lilies - Aaron Kenny.mp3" type="audio/wav"> <!--wav muito pesado!  -->
+        <p>Infelizmente o seu navegador não pode reproduzir o audio</p>
+        <a href="midias/Watercolor Lilies - Aaron Kenny.mp3" >Baixe aqui</a>
+</audio>
+
+
+<h1>Videos</h1>
+<p>Aqui veremos os videos locais no meu servidor</p>
+<video src="midias/teclado.mp4" width="100" controls></video>
+
+<video controls width="560" poster="Imagens/CompuadorG.png" autoplay loop >
+    <source src="midias/tubara.mp4" type="video/mp4">
+
+
+</video>
+<h1>videos externos</h1>
+<p>Abaixo os videos externos</p>
+<pre>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/joXu1AMzzWg?start=10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+
+                                            <iframe src="https://player.vimeo.com/video/461057104?autoplay=1&color=ff9933" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>  
+</pre>
+
+</body>
+</html>

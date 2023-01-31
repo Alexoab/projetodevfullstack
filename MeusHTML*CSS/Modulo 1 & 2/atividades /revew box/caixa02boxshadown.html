@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: bisque;
+        margin: 0px;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    nav{
+        background-color: rgba(58, 53, 53, 0.363);
+        padding: 3px;
+        box-shadow: 1px 1px 1px black;
+        
+
+    }
+    nav > a{
+        text-decoration: none;/* Tira a decoração */
+        color: whitesmoke;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+       
+
+    }
+  
+    main{
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+    }
+    article{
+        background-color: darkgrey;
+    }
+    article > aside{
+        background-color:rgb(109, 106, 106) ;
+        text-align: center;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 3px;
+        margin: 0px;
+    }
+    footer > p{
+        margin: 0;
+    }
+    #assuntos p {
+margin-right: 99px;
+display: inline;
+}
+</style>
+<body>
+<header>
+<h1>Aqui é o meu cabeçalho </h1>
+<nav>
+    <a href="#">links</a>
+    <a href="#">links</a>
+    <a href="#">links</a>
+    <a href="#">links</a>
+    <a href="#">links</a>
+</nav>
+
+
+</header>
+
+<main>
+<section id="assuntos">
+Esportes Politica  Tecnologia 
+
+</section>
+
+<section id="noticias">
+ <article>
+     <h2>Noticias do artigo aqui </h2>
+     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia itaque, velit perferendis alias magni consequuntur repellendus illum nisi exercitationem vero. A ducimus iusto alias dolor odit modi consectetur numquam maxime. </p>
+ <aside>
+     <p> Aqui é um contéudo periferico ao artigo, EX : escrito por josé da silva </p>
+ </aside>
+
+ </article>
+</section>
+</main>
+
+<footer>
+<p> Aqui é um rodapé Desenvolvido por @ALEXOAB entre em contato.</p>
+</footer>
+    
+</body>
+</html>

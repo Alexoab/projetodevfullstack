@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* lembrando:
+ Em html            Em CSS 
+id                  #
+class               .
+*/
+body{
+    background-color: rgb(175, 159, 129);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(172, 64, 45);
+}
+h1#principal{/* pode ser usado semo h1 apenas escreva a sua marcação */
+    text-align: center;
+    background-color: rgb(163, 84, 163);
+    color: rgb(182, 178, 178);
+}
+h2{
+    color: rgb(39, 151, 140);
+}
