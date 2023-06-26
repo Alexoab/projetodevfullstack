@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical </title>
+    <style>
+        #container {
+            background-image: url(/imagens/target001.png);
+            background-size: 100% 100%;
+
+            /* Conteúdo de fora=   position: relative; */
+            position: relative;
+            height: 95vh;
+            background-color: blue;
+            padding: 10px;
+
+        }
+
+        #conteudo {
+            background-image: url(/imagens/target001.png);
+            background-size: 100% 100%;
+
+            /* conteúdo de dentro =    position: absolute;*/
+            position: absolute;
+            height: 230px;
+            width: 330px;
+            background-color: yellow;
+            /* Se quiser alinhar no centro uso auto:  elemento horizontal   margin: auto; */
+            /*   left: 100px;
+            top: 200px; */
+            /* Aliando de maneira vertical os elementos  */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+
+</html>

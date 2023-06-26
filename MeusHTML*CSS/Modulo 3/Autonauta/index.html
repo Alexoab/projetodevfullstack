@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Astronauta </title>
+    <style>
+        body {
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
+            /* Não esqueça isso  */
+            background-repeat: no-repeat;
+            /* Não esqueça isso  */
+        }
+
+        main {
+            color: aliceblue;
+            text-align: center;
+
+
+
+        }
+
+        #astro {
+            height: 95vh;
+            background-image: url(imagens/astronauta.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+
+        #astro h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-154%, -168%);
+            display: inline-block;
+
+        }
+
+        #astro:hover h1 {
+            visibility: hidden;
+            background-color: aliceblue;
+
+            color: orange;
+        }
+
+        #astro:hover::after {
+            content: "Acredite(Belive!)";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-154%, -168%);
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div id="astro">
+            <h1>Acredite- (Belive!)</h1>
+        </div>
+
+        <script>
+            var astro = document.getElementById('astro');
+            window.addEventListener('mousemove', function (event) {
+                var x = event.clientX;
+                var y = event.clientY;
+                var rect = astro.getBoundingClientRect();
+                var centerX = rect.left + (rect.width / 2);
+                var centerY = rect.top + (rect.height / 2);
+                var angle = Math.atan2(y - centerY, x - centerX) * (180 / Math.PI);
+                astro.style.transform = 'rotate(' + angle + 'deg)';
+            });
+        </script>
+
+</body>
+
+</html>
