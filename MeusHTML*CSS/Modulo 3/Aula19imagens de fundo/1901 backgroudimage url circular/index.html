@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Usando fotos circulares </title>
+</head>
+<style>
+    body {
+        background-image: url(imagens/alfa3.jpeg);
+
+
+    }
+
+    h1 {
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .conteudo {
+        color: white;
+        text-align: left;
+        padding: 133px;
+    }
+
+    .circulo-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Define o estilo dos elementos com a classe 'circulo' */
+    .circulo {
+        /* Define o tamanho dos círculos */
+        width: 100px;
+        height: 100px;
+        /* Define a borda e o raio de borda arredondada */
+        border: 3px solid black;
+        border-radius: 50%;
+        /* Na horizontal  */
+        display: inline-block;
+        /* Define a distância dos quadrados ao redor do ponto central */
+        position: absolute;
+        /* Adicione uma transição suave para a mudança de cor */
+        transition: background-color 0.6s ease;
+    }
+
+    /*Aqui eu coloco o css particular de cada 1 Define os estilos específicos para cada círculo usando transformações */
+
+    .circulo:nth-child(1) {
+        background-color: #f2f2f2;
+        transform: translate(150px, 0);
+    }
+
+    .circulo:nth-child(2) {
+        background-color: #d9d9d9;
+        transform: rotate(60deg) translate(150px, 0);
+    }
+
+    .circulo:nth-child(3) {
+        background-color: #737373;
+        transform: rotate(120deg) translate(150px, 0);
+    }
+
+    .circulo:nth-child(4) {
+        background-color: #262626;
+        transform: rotate(180deg) translate(150px, 0);
+    }
+
+    .circulo:nth-child(5) {
+        background-color: #0d0d0d;
+        transform: rotate(240deg) translate(150px, 0);
+    }
+
+    /* Efeito de hover - mude a cor de fundo no hover */
+    .circulo:hover {
+        background-color: #44ff00b5;
+        /* Por exemplo, vermelho */
+    }
+
+    /* Estilo para o botão de conversão */
+    .botao-conversao {
+        background-color: #44ff00;
+        /* Cor de fundo do botão */
+        color: #f2f2f2;
+        /* Cor do texto do botão */
+        padding: 10px 20px;
+        /* Espaçamento interno do botão */
+        border: none;
+        /* Sem borda */
+        border-radius: 5px;
+        /* Borda arredondada */
+        font-size: 18px;
+        /* Tamanho da fonte */
+        cursor: pointer;
+        /* Cursor de mão ao passar o mouse */
+        transition: background-color 0.6s ease;
+        /* Transição suave da cor de fundo */
+        animation: pulse 1.5s infinite;
+        /* Animação de pulsação */
+
+    }
+
+    /* Defina a animação de pulsação */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Quando o mouse passar por cima, a cor de fundo do botão mudará */
+    .botao-conversao:hover {
+        background-color: #44ff00b5;
+        /* Nova cor de fundo ao passar o mouse */
+    }
+
+    /* Tornar o conteúdo responsivo */
+    @media (max-width: 768px) {
+        .conteudo {
+            padding: 20px;
+        }
+
+        .circulo-container {
+            transform: translate(-50%, -30%);
+        }
+
+        /* Reduza o tamanho dos círculos para dispositivos menores */
+        .circulo {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Reduza o tamanho do botão para dispositivos menores */
+        .botao-conversao {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+</style>
+
+<body>
+    <div class="conteudo">
+        <h1>seja alfa líder </h1>
+        <p> Acesse seu link abaixo:</p>
+        <a href="https://sejaalfalider.com.br/" class="botao-conversao">Acesse Agora</a>
+    </div>
+
+    <!-- Aqui eu individualizo cada um  -->
+    <div class="circulo-container">
+        <a href="https://www.instagram.com/sejaumalfalider/" class="circulo" title="Siga" target="_blank"></a>
+        <a href="https://sejaalfalider.com.br/index.php/produtos-alfa/cultura-alfa/" class="circulo"
+            title="Cultura Alfa" target="_blank"></a>
+        <a href="https://sejaalfalider.com.br/index.php/produtos-alfa/aparencia-alfa/ " class="circulo"
+            title="Manter sua aparência alfa" target="_blank"></a>
+        <a href="https://sejaalfalider.com.br/index.php/produtos-alfa/estimulantes-alfa/" class="circulo"
+            title="Conheça nossos Estimulantes" target="_blank"></a>
+        <a href="https://sejaalfalider.com.br/ " class="circulo" title="Conheça nosso site" target="_blank"></a>
+
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
