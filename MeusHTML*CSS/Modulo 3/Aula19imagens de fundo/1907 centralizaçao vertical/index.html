@@ -8,12 +8,13 @@
     <title>Centralização vertical </title>
     <style>
         #container {
+            /*  */
             background-image: url(/imagens/target001.png);
             background-size: 100% 100%;
 
-            /* Conteúdo de fora=   position: relative; */
+            /* Conteúdo de fora ,possui =   position: relative; */
             position: relative;
-            height: 95vh;
+            height: 94vh;
             background-color: blue;
             padding: 10px;
 
@@ -28,12 +29,19 @@
             height: 230px;
             width: 330px;
             background-color: yellow;
-            /* Se quiser alinhar no centro uso auto:  elemento horizontal   margin: auto; */
+            /* Se quiser alinhar no centro uso auto:  elemento horizontal  alinhamento
+            horizontal
+             margin: auto; */
+
             /*   left: 100px;
             top: 200px; */
-            /* Aliando de maneira vertical os elementos  */
+            /* Aliando de maneira vertical os elementos .
+            Usando a propriedade absolute eu posso mover,em relação ao relativo ,usando como referencia a metade do contêiner  */
             left: 50%;
             top: 50%;
+            /*  Movendo o componente:
+            
+            mexendo com a esquerda e para cima */
             transform: translate(-50%, -50%);
 
 
@@ -45,6 +53,7 @@
 </head>
 
 <body>
+    <!-- abro duas div semânticas section e article -->
     <section id="container">
         <article id="conteudo">
 
