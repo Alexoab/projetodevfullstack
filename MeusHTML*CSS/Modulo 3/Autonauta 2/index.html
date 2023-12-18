@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Astronauta </title>
+    <style>
+        body {
+            height: 95vh;
+            background:black url(imagens/espaco.jpg);
+            /* cobrindo a tela toda  background-size: cover;*/
+            background-size: cover;  
+            /* Escondendo o scroll do mouse */
+            overflow: hidden;  
+        }
+        body h1{
+            animation: float 3s ease infinite;
+            color: aliceblue;
+        }
+
+        
+
+        main {
+            height: 95vh;
+            /* Shorthand -background:
+        color > image >position > repeat > [size] >attachment(extensão do conteúdo) */
+            background: url(imagens/astronauta.png)  center center no-repeat fixed ;
+            /* background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+             */
+             background-size:auto;
+             animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%,100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-50px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <h1>Bem vindos a revolução</h1>
+   <main>
+
+   </main>
+      
+
+</body>
+
+</html>
